@@ -16,5 +16,6 @@ text = "Hello World!"
 # print({char.lower() for char in text})
 
 # we want to print in the specified order
+
 a = OrderedDict.fromkeys([char.lower() for char in text if char.isalpha()])
 print(f"{{{','.join(a.keys())}}}") 
